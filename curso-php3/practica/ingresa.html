@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <p>
+        <h1>GRAN LIQUIDACION</h1>
+        <h1>35% DE DESCUEBTO EN TODA LA TIENDA</h1>
+    </p>
+    <h3>VERIFIQUE SUS PRECIOS</h3>
+    <form action='action.php'>
+        <input type='text' name='precio'>
+        <button type='submit'>Enviar</button>
+        <p></p>
+    </form>
+    <hr>
+    <p>
+        <h1>ARTICULOS</h1>
+    </p>
+        <form action='action.php'>
+            <h3>los articulos son:</h3>
+            <label>
+                <?php
+                    $articulos=[
+                        array("nombre" => "mueble 1 ", "ancho" => 10,  "alto" => 110),
+                        array("nombre" => "mueble 2 ", "ancho" => 20,  "alto" => 10),
+                        array("nombre" => "mueble 3 ", "ancho" => 30,  "alto" => 85),
+                        array("nombre" => "mueble 4 ", "ancho" => 40,  "alto" => 250),
+                        array("nombre" => "mueble 5 ", "ancho" => 50,  "alto" => 200),
+                        array("nombre" => "mueble 6 ", "ancho" => 60,  "alto" => 80),
+                        array("nombre" => "mueble 7 ", "ancho" => 70,  "alto" => 40),
+                        array("nombre" => "mueble 8 ", "ancho" => 80,  "alto" => 30),
+                        array("nombre" => "mueble 9 ", "ancho" => 90,  "alto" => 10),
+                        array("nombre" => "mueble 10", "ancho" => 100, "alto" => 110),
+                        array("nombre" => "mueble 11", "ancho" => 110, "alto" => 120),
+                        array("nombre" => "mueble 12", "ancho" => 120, "alto" => 130),
+                        array("nombre" => "mueble 13", "ancho" => 130, "alto" => 140),
+                        array("nombre" => "mueble 14", "ancho" => 140, "alto" => 150),
+                        array("nombre" => "mueble 15", "ancho" => 150, "alto" => 100),
+                        array("nombre" => "mueble 16", "ancho" => 160, "alto" => 90),
+                        array("nombre" => "mueble 17", "ancho" => 170, "alto" => 80),
+                        array("nombre" => "mueble 18", "ancho" => 180, "alto" => 70),
+                        array("nombre" => "mueble 19", "ancho" => 190, "alto" => 60),
+                        array("nombre" => "mueble 20", "ancho" => 200, "alto" => 50),
+                    ];
+
+                ?>
+            </label>
+            <button type='submit'>Enviar</button>
+
+        </form>
+</body>
+</html>

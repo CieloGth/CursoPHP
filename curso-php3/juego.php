@@ -1,17 +1,22 @@
 <?php
-$words = array("sol", "luna", "cielo",
-//  "estrellas", "mar", "playas", "ornitorinco"
-);
-$desordenadas = array();
+$words = array("sol", "luna", "cielo", "luz", "estrella", "lluvia");
 
-foreach ($words as $palabra) {
-    $letras = str_shuffle($palabra);
-    array_push($desordenadas, $letras);
+$form = "<form action='analisis.php'>";
+
+for ($i=0; $i < count($words) ; $i++) { 
+    $palabra =str_shuffle($words[$i]);
+    $form .= "La palabra: ".$palabra."".
+    "<input type='text' name='palabra$i'> ".
+    "<br><hr>";
 }
-// var_dump($words);
-// var_dump($desordenadas);
+
+
+
+$boton = "<button type='submit'>Enviar</button>";
+$cform ="</form>";
 
 echo "\n\n";
+echo $form.$boton.$cform;
 
 
 ?>
